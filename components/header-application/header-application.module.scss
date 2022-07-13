@@ -1,0 +1,136 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #e5e5e5;
+    color: #3d3737;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.left {
+    display: flex;
+    align-items: center;
+    a {
+        &:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 150px;
+            height: 50px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 13px;
+            margin-right: 20px;
+            border: 1px solid #000000;
+            cursor: pointer;
+        }
+    }
+}
+.logoAction {
+    cursor: pointer;
+}
+.right {
+    display: flex;
+    align-items: center;
+}
+.help {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 10px;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 170px;
+    height: 40px;
+    background: #f0f0f0;
+    margin-left: 5px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+}
+.wrapperMob {
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    .wrapper {
+        display: none;
+    }
+    .wrapperMob {
+        display: block;
+    }
+    .topMob {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f6f6f6;
+    }
+    .helpMob {
+        padding-left: 10px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 15px;
+        color: #3d3737;
+    }
+    .linksMob {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        a {
+            background: #eaeaea;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            &:first-child {
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 5px;
+            }
+            &:last-child {
+                padding: 0 10px;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 13px;
+                color: #000000;
+            }
+        }
+    }
+    .bottomMob {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 10px;
+    }
+    .backMob {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 13px;
+        color: #3d3737;
+        cursor: pointer;
+        img {
+            margin-right: 10px;
+        }
+    }
+    .emptySpace {
+        width: 56px;
+    }
+}

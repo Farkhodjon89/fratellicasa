@@ -1,0 +1,148 @@
+.wrapper {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 190px;
+    height: 350px;
+    border: 1.4px solid #000000;
+    border-radius: 5px;
+    background: white;
+    &.active {
+        display: block;
+    }
+}
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 18px;
+    background: #f6f6f6;
+}
+.bogBoss {
+    background: #f6f6f6;
+    height: 170px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.cartItemList {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background: white;
+}
+.img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.cartItemListInfo {
+    display: flex;
+    flex-direction: column;
+}
+.nameDelete {
+    display: flex;
+    align-items: flex-start;
+    font-size: 11px;
+    line-height: 13px;
+}
+.name {
+    width: 100%;
+    height: 38px;
+    overflow: hidden;
+}
+.price {
+    margin-top: auto;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    span {
+        font-weight: 300;
+    }
+}
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    padding: 0 5px;
+    border-bottom: 1px solid #e5e5e5;
+    
+    div {
+        &:first-child {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+        }
+        &:last-child {
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 14px;
+        }
+    }
+}
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    img {
+        margin-right: 5px;
+    }
+}
+
+.confrim {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px !important;
+    background-color: black !important;
+    color: white !important;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    width: 100%;
+}
+
+.empty {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeCart {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .confrim {
+        height: 40px !important;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .closeCart {
+        display: none;
+        position: absolute;
+        top: 35px;
+        right: 200px;
+        border: 1px solid black;
+        border-radius: 50%;
+        &.active2 {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+  <meta property="og:url" content="https://fratellicasa.com/"/>
+          <meta property="og:site_name" content="Fratelli Casa"/>
+          <meta property="og:locale" content="ru_RU"/>
+          <meta property="og:type" content="website"/>
+          <meta property="og:title" content="Интернет-магазин мужской и женской одежды | Fratelli Casa"/>
+          <meta property="og:description"
+                content="Модная мужская и женская одежда с восточным узором. 100% хлопок, ручная работа, экологически чистые материалы. Доставка по всему Миру!"/>
+          <meta property="og:image" content="https://wp.fratellicasa.com/wp-content/uploads/2021/12/seologo.png"/>
+          <meta name="twitter:card" content="summary"/>
+          <meta name="twitter:title" content="Интернет-магазин мужской и женской одежды | Fratelli Casa"/>
+          <meta name="twitter:description"
+                content="Модная мужская и женская одежда с восточным узором. 100% хлопок, ручная работа, экологически чистые материалы. Доставка по всему Миру!"/>
+          <meta name="twitter:image" content="https://wp.fratellicasa.com/wp-content/uploads/2021/12/seologo.png"/>

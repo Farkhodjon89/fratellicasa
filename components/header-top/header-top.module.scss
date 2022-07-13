@@ -1,0 +1,111 @@
+.wrapper {
+    padding: 0 20px;
+    background-color: #1d1d1b;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 13px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3d3737;
+        margin-right: 25px;
+        width: 100%;
+        max-width: 170px;
+        height: 40px;
+        margin-right: 5px;
+        &:first-of-type {
+            margin-left: auto;
+        }
+        img {
+            margin-right: 10px;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+.iconsDesk {
+    display: flex;
+    div {
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        img {
+            margin-right: 10px;
+        }
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+.iconsMob {
+    display: none;
+}
+@media screen and (max-width: 1023px) {
+    .wrapper {
+        padding: 0;
+    }
+    .inner {
+        height: 40px;
+        font-size: 11px;
+        a {
+            &:first-of-type {
+                max-width: 40px;
+                img {
+                    margin-right: 0;
+                }
+                span {
+                    display: none;
+                }
+            }
+            &:last-of-type {
+                max-width: 112px;
+                img {
+                    display: none;
+                }
+                span {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+    .iconsDesk {
+        display: none;
+    }
+    .iconsMob {
+        display: block;
+        width: 50%;
+    }
+    .iconsMobChild {
+        display: flex !important;
+        align-items: center !important;
+        height: 40px;
+        img {
+            margin-right: 5px;
+            margin-left: 10px;
+        }
+    }
+    .iconsMobImg1 {
+        width: 19px;
+        height: 11px;
+    }
+    .iconsMobImg2 {
+        width: 12px;
+        height: 14px;
+    }
+    .iconsMobImg3 {
+        width: 11px;
+        height: 11px;
+    }
+}

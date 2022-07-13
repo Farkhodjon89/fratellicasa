@@ -1,0 +1,182 @@
+.wrapper {
+  padding: 0 20px;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  background: white;
+  width: 100%;
+  z-index: 10;
+}
+.inner {
+  width: 100%;
+  max-width: 1400px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 70px;
+}
+.links {
+  display: flex;
+  position: relative;
+}
+
+.actions {
+  display: flex;
+  margin-left: auto;
+  button {
+    background-color: white;
+    border: 0;
+    padding: 0;
+    outline: none;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+}
+
+.actionsLeft {
+  display: flex;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  padding: 0 35px;
+}
+
+.lang {
+  margin-right: 35px;
+  cursor: pointer;
+}
+
+.search {
+  cursor: pointer;
+}
+
+.actionsRight {
+  display: flex;
+  position: relative;
+}
+
+.signIn {
+  margin: 0 35px;
+}
+
+.like {
+  margin-left: 35px;
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.cart {
+  margin-left: 35px;
+  position: relative;
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background: #ff0000;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+  .inner {
+    height: 60px;
+  }
+  .logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 0;
+  }
+  .like {
+    margin-left: 0;
+  }
+  .links {
+    display: none;
+  }
+
+  .actions {
+    button {
+      height: 24px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+  .actionsLeft {
+    display: none;
+  }
+
+  .signIn {
+    width: 22px;
+    height: 24px;
+    margin: 0 25px 0 0;
+  }
+  .like {
+    width: 25px;
+    height: 24px;
+  }
+  .cart {
+    width: 25px;
+    height: 24px;
+    margin: 0 25px;
+  }
+  .burger {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    &::before,
+    &::after {
+      content: '';
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+    }
+    &::before {
+      top: 0;
+    }
+    &::after {
+      bottom: 0;
+    }
+    span {
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      top: 9px;
+    }
+  }
+}

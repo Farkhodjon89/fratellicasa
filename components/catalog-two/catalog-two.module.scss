@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+.inner {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1023px) {
+    .wrapper {
+        padding: 10px;
+    }
+    .inner {
+        max-width: 375px;
+    }
+}

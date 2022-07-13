@@ -1,0 +1,19 @@
+.wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -14px;
+}
+
+@media screen and (max-width: 1023px) {
+    .wrapper {
+        padding: 0 10px;
+    }
+    .list {
+        margin: 0px -5px;
+    }
+}

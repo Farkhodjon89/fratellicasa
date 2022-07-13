@@ -1,0 +1,22 @@
+.wrapper {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: url('../../public/sale.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 200px;
+
+
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    background: url('../../public/saleMob.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+  }
+}

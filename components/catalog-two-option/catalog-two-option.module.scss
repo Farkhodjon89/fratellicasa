@@ -1,0 +1,26 @@
+.option {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin-top: -1px;
+    border-top: 1px solid #000000;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+        background: #f0f0f0;
+    }
+}
+.active {
+    font-weight: 500;
+}
+.removeMark {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 13px;
+    text-decoration: underline;
+}
+
+// @media screen and (max-width: 1023px) {
+// }

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+@import '~react-image-gallery/styles/css/image-gallery.css';
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~nprogress/nprogress.css';
+@import '~react-phone-input-2/lib/style.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+body {
+  width: 100%;
+  min-width: 320px;
+  font-family: 'Roboto', sans-serif !important;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Product Card List Main */
+.recommend {
+  width: 100%;
+  max-width: 1000px;
+  margin: 30px auto 30px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #3d3737;
+}
+/* Product Card Images */
+.image-gallery {
+  width: 50%;
+}
+.image-gallery-content {
+  width: 100%;
+}
+.image-gallery-slide-wrapper {
+  width: calc(100% - 70px) !important;
+}
+.image-gallery-left-nav {
+  left: 15px;
+}
+.image-gallery-right-nav {
+  right: 15px;
+}
+.image-gallery-icon {
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  filter: none !important;
+}
+.image-gallery-svg {
+  width: 100% !important;
+  height: 28px !important;
+  color: #3d3737 !important;
+}
+.image-gallery-image {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 690px !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+}
+.image-gallery-thumbnails-wrapper {
+  width: 60px !important;
+  height: 530px !important;
+  margin: 0 0 0 10px !important;
+}
+.image-gallery-thumbnail {
+  width: 100% !important;
+  height: 66px !important;
+  margin: 0 0 10px 0 !important;
+  border: 1px solid #9e9e9e !important;
+  outline: none !important;
+  opacity: 0.4 !important;
+}
+.image-gallery-thumbnail.active {
+  opacity: 1 !important;
+}
+.image-gallery-thumbnail-inner {
+  width: 100% !important;
+  height: 100% !important;
+}
+.image-gallery-thumbnail-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+@media screen and (max-width: 1023px) {
+  /* Product Card List Main */
+  .recommend {
+    padding: 0 10px;
+  }
+  /* Product Card Images */
+  .image-gallery {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .image-gallery-slide-wrapper {
+    width: 100% !important;
+  }
+  .image-gallery-image {
+    height: 390px !important;
+  }
+  .image-gallery-thumbnails-wrapper {
+    width: 100% !important;
+    height: 90px !important;
+    margin: 10px 0 !important;
+  }
+  .image-gallery-thumbnails {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+  }
+  .image-gallery-thumbnails-container {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .image-gallery-thumbnail {
+    width: 81px !important;
+    height: 100% !important;
+    margin: 0 10px 0 0 !important;
+  }
+}
+
+#nprogress .bar {
+  background: black !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: black !important;
+  border-left-color: black !important;
+}
+
+.react-tel-input .form-control {
+  width: 100%;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  color: #3d3737;
+  height: 40px;
+  border: 0;
+  outline-color: black !important;
+}
+
+.zoodpay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  padding: 150px 15px;
+}
+
+.contact-tg {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 40px;
+  padding: 5px 10px 5px 5px;
+  background-color: #0b81bb;
+  color: #ffffff !important;
+  text-align: center;
+  overflow: hidden;
+  font-size: 14px;
+  border-radius: 50px;
+  z-index: 9811 !important;
+}

@@ -1,0 +1,152 @@
+.wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  overflow: auto;
+  &.active {
+    display: block;
+  }
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 25px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 10px;
+}
+.logo {
+  width: 35px;
+  height: 35px;
+}
+.filter {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 13px;
+  color: #3d3737;
+  img {
+    margin-right: 10px;
+  }
+}
+.burger {
+  display: block;
+  position: relative;
+  width: 32px;
+  height: 20px;
+  &::before,
+  &::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+  }
+  &::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  &::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 70px);
+  .card {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.cardHeader {
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  line-height: 13px;
+  background-color: #f6f6f6;
+  border: 0;
+  outline: 0 !important;
+  font-weight: 300;
+  div {
+    margin-right: 10;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    span {
+      font-weight: bold;
+    }
+  }
+}
+.cardBody {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 52px;
+  padding: 0 40px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 13px;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.activeFilter {
+  font-weight: 500;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  .makeFilter {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 13px;
+    color: #ffffff;
+    background: black;
+    img {
+      margin-left: 15px;
+    }
+  }
+  .resetFilter {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 13px;
+    text-decoration: underline;
+    color: #3d3737;
+    background: #ffffff;
+    img {
+      margin-right: 15px;
+    }
+  }
+}

@@ -1,0 +1,375 @@
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentMethod {
+  width: 72%;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: black;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 13px;
+    color: #ffffff;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+
+.lastCheck {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  color: #aaaaaa;
+  margin-bottom: 10px;
+}
+
+.payList {
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  margin-bottom: 25px;
+
+  img {
+    cursor: pointer;
+    margin-right: 25px;
+
+    &.active {
+      margin: -2px;
+      margin-right: 23px;
+      border: 2px solid #3d3737;
+    }
+  }
+}
+
+.octoIcon {
+  width: 250px;
+  height: auto;
+  border: 2px solid #3d3737;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #3d3737;
+  margin-top: -1px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+
+  img {
+    margin-right: 10px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 50px;
+  }
+}
+
+.textZoodpay {
+  padding: 10px 0;
+  width: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  color: #3d3737;
+  margin-top: -1px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cart {
+  width: 25%;
+}
+
+.cartBlock {
+  width: 100%;
+}
+
+.cartItemList {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  img {
+    min-width: 50px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+}
+
+.cartName {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #3d3737;
+}
+
+.cartPrice {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #3d3737;
+}
+
+.finalCheck {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  padding: 0 10px;
+  border: 1px solid #e5e5e5;
+  color: #9e9e9e;
+  margin-top: -1px;
+
+  .deliveryText {
+    color: #3d3737;
+  }
+
+  div {
+    width: 100px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  &:last-child {
+    color: #3d3737;
+    margin-bottom: 25px;
+  }
+
+  .delivery {
+    font-weight: 500;
+    color: #3d3737;
+  }
+}
+
+.offer {
+  width: 100%;
+
+  a {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    height: 35px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 12px;
+    color: #9e9e9e !important;
+    width: 100%;
+
+    &:nth-child(1) {
+      img {
+        margin-right: 10px;
+      }
+    }
+
+    &:nth-child(2) {
+      img {
+        margin-left: 4px;
+        margin-right: 13px;
+      }
+    }
+
+    &:nth-child(3) {
+      img {
+        margin-left: 4px;
+        margin-right: 11px;
+      }
+    }
+
+    &:nth-child(4) {
+      img {
+        margin-left: 2px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    display: block;
+    padding-bottom: 0;
+  }
+  .cart {
+    width: 100%;
+  }
+  .cartBlock {
+    display: none;
+  }
+  .title {
+    margin: 15px 10px;
+  }
+  .payList {
+    margin: 0 10px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    justify-content: space-around;
+
+    img {
+      margin-bottom: 10px;
+
+      &.active {
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .text {
+    display: block;
+    align-items: center;
+    height: 100%;
+    padding: 10px;
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  .textZoodpay {
+    padding: 10px;
+  }
+  .finalCheckRow {
+    margin: 20px 10px;
+  }
+  .finalCheck {
+    div {
+      width: 50%;
+    }
+  }
+  .paymentMethod {
+    width: 100%;
+    position: relative;
+    padding-bottom: 80px;
+
+    button {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 70px;
+    }
+  }
+  .offer {
+    width: 100%;
+
+    a {
+      margin-top: -1px;
+      border-top: 1px solid #e5e5e5;
+      border-bottom: 1px solid #e5e5e5;
+      text-decoration: underline !important;
+      padding-left: 10px;
+      height: 40px;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 13px;
+      color: #3d3737 !important;
+    }
+  }
+}
+
+.loaderAnimation {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid black;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  -webkit-animation: spin 0.6s linear infinite;
+  animation: spin 0.6s linear infinite;
+  cursor: not-allowed;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.emptyCart {
+  width: 100%;
+  max-width: 1000px;
+  margin: 70px auto;
+  height: 300px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+
+  a {
+    font-weight: bold;
+    text-decoration: underline !important;
+  }
+}
+
+.zoodpay {
+  pointer-events: none;
+  opacity: 0.5;
+  border: 1px solid red;
+}
+
+.errorMessage {
+  font-size: 13px;
+  line-height: 17px;
+  color: red;
+
+  div {
+    margin-bottom: 10px;
+  }
+}
+
+.zoodpayy {
+  cursor: not-allowed !important;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.removeCod {
+  display: none;
+}

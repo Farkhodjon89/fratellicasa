@@ -1,0 +1,69 @@
+.main {
+    width: 100%;
+    max-width: 320px;
+    position: relative;
+}
+.active {
+    border: 1px solid #000000;
+}
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 0;
+    padding: 0 20px;
+    background-color: #f6f6f6;
+    font-weight: 300;
+    outline: 0 !important;
+    &:hover {
+        background: linear-gradient(270deg, #ebebeb 57.5%, rgba(235, 235, 235, 0) 100%);
+    }
+    div {
+        margin-right: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.body {
+    display: none;
+    width: 100%;
+    height: 197px;
+    overflow-y: auto;
+    border: 1px solid #000000;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 13px;
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    background-color: white;
+    &.active {
+        display: block;
+    }
+}
+
+.body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.body::-webkit-scrollbar:vertical {
+    width: 7px;
+}
+
+.body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid white; /* should match background, can't be transparent */
+    background: gray;
+}
