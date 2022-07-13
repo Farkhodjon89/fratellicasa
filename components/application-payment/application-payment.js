@@ -376,6 +376,12 @@ const ApplicationPayment = ({ cartItems }) => {
                     className={s.octoIcon}
                     onClick={() => setSelectMethod('agruz')}
                   />
+                  <img
+                    src='/application/mir.jpeg'
+                    key='agruz'
+                    className={s.octoIcon2}
+                    onClick={() => setSelectMethod('agruz')}
+                  />
                 </>
               ) : (
                 payIcons.map(({ src, value }) => (
