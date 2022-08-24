@@ -6,7 +6,7 @@ const CATEGORIES = gql`
       first: 100
       where: {
         hideEmpty: true
-        include: [5659, 4392, 4407, 6224]
+        include: [6493, 6496, 6424, 6426]
         orderby: TERM_ID
       }
     ) {
