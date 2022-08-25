@@ -1,23 +1,29 @@
-import s from './header-bottom.module.scss';
-import React, { useState, useEffect, useContext } from 'react';
-import Link from 'next/link';
-import HeaderMobile from '../header-mobile';
-import { v4 as uuidv4 } from 'uuid';
-import { connect } from 'react-redux';
-import CartModal from '../cart-modal';
-import LinksModal from '../links-modal';
-import { Context } from '../../pages/_app';
+import s from './header-bottom.module.scss'
+import React, { useState, useEffect, useContext } from 'react'
+import Link from 'next/link'
+import HeaderMobile from '../header-mobile'
+import { v4 as uuidv4 } from 'uuid'
+import { connect } from 'react-redux'
+import CartModal from '../cart-modal'
+import LinksModal from '../links-modal'
+import { Context } from '../../pages/_app'
 
-const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCart }) => {
-  const [open, setOpen] = useState(false);
-  const [state, dispatch] = useContext(Context);
+const HeaderBottom = ({
+  cartItems,
+  wishlistItems,
+  category,
+  openCart,
+  setOpenCart,
+}) => {
+  const [open, setOpen] = useState(false)
+  const [state, dispatch] = useContext(Context)
   useEffect(() => {
     if (open) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = 'unset'
     }
-  }, [open]);
+  }, [open])
   const link1 = [
     {
       key: '0',
@@ -51,7 +57,7 @@ const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCar
       bodySlug: '/catalog/',
       products: category[3].node.products,
     },
-  ];
+  ]
   const link2 = [
     // {
     //   header: 'О нас',
@@ -65,15 +71,15 @@ const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCar
       header: 'Скидки',
       slug: '/catalog/sale',
     },
-  ];
-  const links = [...link1, ...link2];
+  ]
+  const links = [...link1, ...link2]
   return (
     <>
       <section className={s.wrapper}>
         <div className={s.inner}>
-          <Link href="/">
+          <Link href='/'>
             <a className={s.logo}>
-              <img src="/header/logo.svg" />
+              <img src='/header/logo.svg' />
             </a>
           </Link>
           <div className={s.links}>
@@ -91,7 +97,7 @@ const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCar
           <div className={s.actions}>
             {state.currency === 'USD' ? (
               <button onClick={() => dispatch({ type: 'UZ' })}>
-                <img src="/usd.svg" alt="" />
+                <img src='/usd.svg' alt='' />
               </button>
             ) : (
               <button onClick={() => dispatch({ type: 'USD' })}>СУМ</button>
@@ -100,9 +106,9 @@ const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCar
               {/* <div className={s.lang}>
               <img src='/header/ru.svg' />
             </div> */}
-              <Link href="/catalog/zhenskaya" className={s.search}>
+              <Link href='/catalog/zhenskaya' className={s.search}>
                 <a>
-                  <img src="/header/search.svg" />
+                  <img src='/header/search.svg' />
                 </a>
               </Link>
             </div>
@@ -112,36 +118,48 @@ const HeaderBottom = ({ cartItems, wishlistItems, category, openCart, setOpenCar
                 <img src='/header/sign-in.svg' />
               </a>
             </Link> */}
-              <Link href="/wishlist">
+              <Link href='/wishlist'>
                 <a className={s.like}>
-                  <img src="/header/like.svg" />
-                  {wishlistItems.length ? <span>{wishlistItems.length}</span> : ''}
+                  <img src='/header/like.svg' />
+                  {wishlistItems.length ? (
+                    <span>{wishlistItems.length}</span>
+                  ) : (
+                    ''
+                  )}
                 </a>
               </Link>
-              <Link href="/application-cart">
+              <Link href='/application-cart'>
                 <a className={s.cart}>
-                  <img src="/header/basket.svg" />
+                  <img src='/header/basket.svg' />
                   {cartItems.length ? <span>{cartItems.length}</span> : ''}
                 </a>
               </Link>
-              <CartModal activeStatus={openCart} getActiveStatus={setOpenCart} />
+              <CartModal
+                activeStatus={openCart}
+                getActiveStatus={setOpenCart}
+              />
             </div>
           </div>
           <div className={s.burger} onClick={() => setOpen(true)}>
             <span />
           </div>
         </div>
-        <HeaderMobile activeStatus={open} getActiveStatus={setOpen} link1={link1} link2={link2} />
+        <HeaderMobile
+          activeStatus={open}
+          getActiveStatus={setOpen}
+          link1={link1}
+          link2={link2}
+        />
       </section>
     </>
-  );
-};
+  )
+}
 
 const mapStateToProps = (state) => {
   return {
     cartItems: state.cartData,
     wishlistItems: state.wishlistData,
-  };
-};
+  }
+}
 
-export default connect(mapStateToProps, null)(HeaderBottom);
+export default connect(mapStateToProps, null)(HeaderBottom)

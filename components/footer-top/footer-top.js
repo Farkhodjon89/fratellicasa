@@ -95,12 +95,12 @@ const FooterTop = () => (
       <div className={s.col}>
         <div>Девушки</div>
         <div>
-          <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya'>
+          <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya'>
             <a>Футболки</a>
           </Link>
         </div>
         <div>
-          <Link href='/catalog/svitshoty'>
+          <Link href='/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya'>
             <a>Свитшоты</a>
           </Link>
         </div>
@@ -118,7 +118,7 @@ const FooterTop = () => (
       <div className={s.col}>
         <div>Мужчины</div>
         <div>
-          <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya'>
+          <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya'>
             <a>Футболки</a>
           </Link>
         </div>
@@ -129,12 +129,12 @@ const FooterTop = () => (
           </Link>
         </div>
         <div>
-          <Link href='/catalog/kurtki-muzhskaya'>
+          <Link href='/catalog/kurtki'>
             <a>Куртки</a>
           </Link>
         </div>
         <div>
-          <Link href='/catalog/pizhamy'>
+          <Link href='/catalog/pizhamy-muzhskaya'>
             <a>Пижамы</a>
           </Link>
         </div>
