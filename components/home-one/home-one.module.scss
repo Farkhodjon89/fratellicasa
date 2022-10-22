@@ -32,6 +32,17 @@
 
 .autumn {
   background-image: url('/home/autumn.jpg');
+
+  .inner {
+    .buttons {
+      width: 100%;
+      justify-content: flex-start;
+
+      a {
+        margin: 0 0 0 3px;
+      }
+    }
+  }
 }
 
 .men {
@@ -118,6 +129,19 @@
 
     img {
       order: 1;
+    }
+  }
+
+  .autumn {
+    .inner {
+      .buttons {
+        width: unset;
+        justify-content: flex-start;
+
+        a {
+          margin: 0 0 0 3px;
+        }
+      }
     }
   }
   .zoodpay {

@@ -20,6 +20,11 @@ const HomeOne = () => (
           <a className={s.autumn}>
             <div className={s.inner}>
               <div className={s.title}>Коллекция осень</div>
+              <div className={s.buttons}>
+                <Link href='/catalog/zhenskaya'>
+                  <a>Купить</a>
+                </Link>
+              </div>
             </div>
           </a>
         </Link>
