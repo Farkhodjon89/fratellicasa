@@ -12,8 +12,18 @@ const HomeOne = () => (
       showIndicators={false}
       className={s.wrapper}
       showStatus={false}
-      interval={1000}
+      interval={5000}
+      infiniteLoop={true}
     >
+      <div>
+        <Link href='/catalog/zhenskaya'>
+          <a className={s.autumn}>
+            <div className={s.inner}>
+              <div className={s.title}>Коллекция осень</div>
+            </div>
+          </a>
+        </Link>
+      </div>
       <div>
         <div className={s.women}>
           <div className={s.inner}>

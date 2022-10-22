@@ -6,7 +6,7 @@
 
 .women,
 .men,
-.zoodpay {
+.zoodpay, .autumn {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -28,6 +28,10 @@
 
 .zoodpay {
   background-image: url('/home/z3.jpg');
+}
+
+.autumn {
+  background-image: url('/home/autumn.jpg');
 }
 
 .men {

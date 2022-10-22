@@ -13,9 +13,9 @@ const HomeTwo = () => (
     </div> */}
     <div className={s.row1}>
       <div className={s.left1}>
-        <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya'>
+        <Link href='/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya'>
           <a>
-            <div>Женские футболки</div>
+            <div>Женские свитшоты</div>
             <div className={s.link}>Купить</div>
           </a>
         </Link>
