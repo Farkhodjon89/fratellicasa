@@ -15,15 +15,15 @@ const HomeTwo = () => (
       <div className={s.left1}>
         <Link href='/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya'>
           <a>
-            <div>Женские свитшоты</div>
+            <div>Женские свитшоты с орнаментом</div>
             <div className={s.link}>Купить</div>
           </a>
         </Link>
       </div>
       <div className={s.right1}>
-        <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya'>
+        <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya'>
           <a>
-            <div>Мужские футболки</div>
+            <div>Мужские футболки с орнаментом</div>
             <div className={s.link}>Купить</div>
           </a>
         </Link>
@@ -42,7 +42,7 @@ const HomeTwo = () => (
       <div className={s.right2}>
         <Link href='/catalog/dizajnerskie-skaterti'>
           <a>
-            <div className={s.text}>Дизайнерские скатерти</div>
+            <div className={s.text}>Декор-текстиль с узорами</div>
             <div className={s.link}>Купить</div>
           </a>
         </Link>
