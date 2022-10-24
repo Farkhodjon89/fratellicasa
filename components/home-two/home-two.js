@@ -1,75 +1,46 @@
+import { useMemo } from 'react'
 import s from './home-two.module.scss'
 import Link from 'next/link'
 
-const HomeTwo = () => (
-  <div className={s.wrapper}>
-    {/* <div className={s.title}>
-      <div>
-        Получите <span> 50 000 сум </span> на первую покупку
-      </div>
-      <div>
-        <Link href='/'>Получить сумму</Link>
-      </div>
-    </div> */}
-    <div className={s.row1}>
-      <div className={s.left1}>
-        <Link href='/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya'>
-          <a>
-            <div>Женские свитшоты с орнаментом</div>
-            <div className={s.link}>Купить</div>
-          </a>
-        </Link>
-      </div>
-      <div className={s.right1}>
-        <Link href='/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya'>
-          <a>
-            <div>Мужские футболки с орнаментом</div>
-            <div className={s.link}>Купить</div>
-          </a>
-        </Link>
-      </div>
-    </div>
-    <div className={s.row2}>
-      <div className={s.left2}>
-        {/*<img src='/home/home-two-3.jpg' />*/}
-        <Link href='/catalog/aksessuary'>
-          <a>
-            <div className={s.text}>Женские аксессуары</div>
-            <div className={s.link}>Купить</div>
-          </a>
-        </Link>
-      </div>
-      <div className={s.right2}>
-        <Link href='/catalog/dizajnerskie-skaterti'>
-          <a>
-            <div className={s.text}>Декор-текстиль с узорами</div>
-            <div className={s.link}>Купить</div>
-          </a>
-        </Link>
-        {/*<img src='/home/home-two-4.jpg' />*/}
+const HomeTwo = () => {
+  const items = useMemo(() => [
+    {
+      link: '/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya',
+      title: 'Женские свитшоты с орнаментом',
+      imgUrl: '/home/home-two-2.jpg'
+    },
+    {
+      link: '/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya',
+      title: 'Мужские футболки с орнаментом',
+      imgUrl: '/home/home-two-1.jpg'
+    },
+    {
+      link: '/catalog/aksessuary',
+      title: 'Женские аксессуары',
+      imgUrl: '/home/home-two-3.webp'
+    },
+    {
+      link: '/catalog/dizajnerskie-skaterti',
+      title: 'Декор-текстиль с узорами',
+      imgUrl: '/home/home-two-4.jpg'
+    },
+  ], [])
+
+  return (
+    <div className={s.wrapper}>
+      <div className={s.innerWrapper}>
+        {items.map(el => (
+          <div className={s.block} style={{ backgroundImage: `url(${el.imgUrl})` }}>
+            <Link href={el.link}>
+              <a className={s.desc}>
+                <div className={s.text}>{el.title}</div>
+                <div className={s.link}>Купить</div>
+              </a>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
-    {/* <div className={s.row3}>
-      <div className={s.left3}>
-        <img src='/home/home-two-5.jpg' />
-        <img src='/home/home-two-5-mob.jpg' />
-        <Link href='/catalog/svitshot-svitshot-detskij-zhenskaya'>
-          <a>
-            <div className={s.text}>Свитшоты</div>
-            <div className={s.link}>Смотреть</div>
-          </a>
-        </Link>
-      </div>
-      <div className={s.right3}>
-        <Link href='/catalog/sale'>
-          <a>
-            <div className={s.text}>СКИДКИ</div>
-            <div className={s.link}>Смотреть</div>
-          </a>
-        </Link>
-        <div className={s.img3}> До 50 %</div>
-      </div>
-    </div> */}
-  </div>
-)
+  )
+}
 export default HomeTwo
