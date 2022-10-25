@@ -14,7 +14,7 @@ const HomeOne = () => (
       showStatus={false}
       interval={5000}
       infiniteLoop={true}
-      swipeScrollTolerance={100}
+      swipeScrollTolerance={50}
       preventMovementUntilSwipeScrollTolerance={true}
     >
       <div>
