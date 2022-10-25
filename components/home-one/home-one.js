@@ -14,7 +14,8 @@ const HomeOne = () => (
       showStatus={false}
       interval={5000}
       infiniteLoop={true}
-      swipeScrollTolerance={30}
+      swipeScrollTolerance={100}
+      preventMovementUntilSwipeScrollTolerance={true}
     >
       <div>
         <Link href='/catalog/zhenskaya'>
