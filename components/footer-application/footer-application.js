@@ -120,7 +120,7 @@ const FooterApplication = () => (
           </div>
 
           <div className={s.billz}>
-            <Link href="https://billz.uz">
+            <Link href="https://billz.io">
               <a>
                 E-commerce решение от
                 <img src="/footer/billz.svg"/>
