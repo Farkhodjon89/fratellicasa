@@ -16,9 +16,9 @@ const FooterBottom = () => (
         </Link>
       </div>
       <div className={s.billz}>
-        <Link href='https://billz.io'>
+        <Link href='https://billz.io/online-store' target="_blank" rel="nofollow, noreferrer">
           <a>
-            E-commerce решение от
+            Сайт разработан компанией
             <img src='/footer/billz.svg' />
           </a>
         </Link>
