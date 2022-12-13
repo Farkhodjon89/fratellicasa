@@ -110,7 +110,8 @@
 @media screen and (max-width: 1200px) {
   .women,
   .men,
-  .zoodpay {
+  .zoodpay,
+  .autumn {
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -146,13 +147,6 @@
       }
     }
   }
-  .zoodpay {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .zoodpay {
-    background-image: url('/home/z3-mob.jpg');
-  }
   .men {
     background-image: url('/home/menMob.jpg');
   }
@@ -173,5 +167,15 @@
       //width: 300px;
       padding: 10px 20px;
     }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .zoodpay {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .zoodpay {
+    background-image: url('/home/z3-mob.jpg');
   }
 }
