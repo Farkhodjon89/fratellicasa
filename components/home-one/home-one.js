@@ -46,11 +46,11 @@ const HomeOne = () => (
       {/*    </div>*/}
       {/*  </div>*/}
       {/*</div>*/}
-      <div>
+      {/* <div>
         <Link href='/catalog'>
           <a className={s.zoodpay}></a>
         </Link>
-      </div>
+      </div> */}
     </Carousel>
   </div>
 )
