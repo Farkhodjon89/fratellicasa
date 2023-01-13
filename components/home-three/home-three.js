@@ -41,12 +41,6 @@ const HomeThree = () => (
                 <div>Худи</div>
               </a>
             </Link>
-            <Link href="/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-muzhskaya">
-              <a>
-                <img src="/home/home-three-3.svg" alt=""/>
-                <div>Свитшоты</div>
-              </a>
-            </Link>
             <Link href="/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya">
               <a>
                 <img src="/home/home-three-8.svg" alt=""/>

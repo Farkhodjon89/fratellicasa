@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0d54b05d-76d8-4679-a13c-1fe5f76ccbca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home-one/home-one.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-one/home-one.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home-one/home-one.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-one/home-one.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/home-three/home-three.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-three/home-three.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/home-two/home-two.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/home-two/home-two.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +24,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/serika/billz_github/fratellicasa",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "MTConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/serika/billz_github/fratellicasa&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\Desktop\Billz\billz_github\fratellicasa\public\home" />
@@ -58,7 +55,8 @@
       <workItem from="1666428567585" duration="3428000" />
       <workItem from="1666596576153" duration="2860000" />
       <workItem from="1666634814422" duration="7648000" />
-      <workItem from="1673604158518" duration="2076000" />
+      <workItem from="1673604158518" duration="2254000" />
+      <workItem from="1673608177833" duration="18000" />
     </task>
     <servers />
   </component>
