@@ -66,22 +66,16 @@ const HomeThree = () => (
           </Link>
         </div>
         <div className={s.mainMob}>
-          <Link href="/catalog/svitshoty">
+          <Link href="/catalog/hudi-muzhskaya-hudi-noir-muzhskaya-hudi-noir-zhenskaya">
             <a>
               <img src="/home/home-three-1.svg" alt="" className={s.img1}/>
-              Свитшоты и худи
+              Худи
             </a>
           </Link>
-          <Link href="/catalog/pizhamki">
-            <a>
-              <img src="/home/home-three-2.svg" alt="" className={s.img2}/>
-              Пижамы
-            </a>
-          </Link>
-          <Link href="/catalog/kurtki">
+          <Link href="/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya">
             <a>
               <img src="/home/home-three-3.svg" alt="" className={s.img3}/>
-              Куртки
+              Свитшоты
             </a>
           </Link>
           <Link href="/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya">
@@ -103,22 +97,10 @@ const HomeThree = () => (
           </Link>
         </div>
         <div className={s.mainMob}>
-          <Link href="/catalog/hudi-muzhskaya-hudi-noir-muzhskaya,svitshoty-muzhskaya">
+          <Link href="/catalog/hudi-muzhskaya-hudi-noir-muzhskaya-hudi-noir-muzhskaya">
             <a>
               <img src="/home/home-three-5.svg" alt="" className={s.img5}/>
-              Свитшоты и худи
-            </a>
-          </Link>
-          <Link href="/catalog/pizhamy">
-            <a>
-              <img src="/home/home-three-7.svg" alt="" className={s.img7}/>
-              Пижамы
-            </a>
-          </Link>
-          <Link href="/catalog/kurtki-muzhskaya">
-            <a>
-              <img src="/home/home-three-6.svg" alt="" className={s.img6}/>
-              Куртки
+              Худи
             </a>
           </Link>
           <Link href="/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya">
