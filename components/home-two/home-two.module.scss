@@ -229,6 +229,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .wrapper {
+    margin: 30px auto 0;
+  }
   .title {
     display: flex;
     flex-direction: column;

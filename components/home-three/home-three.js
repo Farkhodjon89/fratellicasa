@@ -7,22 +7,16 @@ const HomeThree = () => (
         <div className={s.title}>Для девушек</div>
         <div className={s.main}>
           <div className={s.icons}>
-            <Link href="/catalog/svitshoty">
+            <Link href="/catalog/hudi-muzhskaya-hudi-noir-muzhskaya-hudi-noir-zhenskaya">
               <a>
                 <img src="/home/home-three-1.svg" alt=""/>
-                <div>Свитшоты и худи</div>
+                <div>Худи</div>
               </a>
             </Link>
-            <Link href="/catalog/pizhamki">
-              <a>
-                <img src="/home/home-three-2.svg" alt=""/>
-                <div>Пижамы</div>
-              </a>
-            </Link>
-            <Link href="/catalog/kostyumy">
+            <Link href="/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya">
               <a>
                 <img src="/home/home-three-3.svg" alt=""/>
-                <div>Костюмы</div>
+                <div>Свитшоты</div>
               </a>
             </Link>
             <Link href="/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya">
@@ -41,22 +35,16 @@ const HomeThree = () => (
         <div className={s.title}>Для мужчин</div>
         <div className={s.main}>
           <div className={s.icons}>
-            <Link href="/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-muzhskaya">
+            <Link href="/catalog/hudi-muzhskaya-hudi-noir-muzhskaya-hudi-noir-muzhskaya">
               <a>
                 <img src="/home/home-three-5.svg" alt=""/>
-                <div>Свитшоты и худи</div>
+                <div>Худи</div>
               </a>
             </Link>
-            <Link href="/catalog/pizhamy">
-              <a>
-                <img src="/home/home-three-7.svg" alt=""/>
-                <div>Пижамы</div>
-              </a>
-            </Link>
-            <Link href="/catalog/kostyum-muzhskaya">
+            <Link href="/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-muzhskaya">
               <a>
                 <img src="/home/home-three-3.svg" alt=""/>
-                <div>Костюмы</div>
+                <div>Свитшоты</div>
               </a>
             </Link>
             <Link href="/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya">

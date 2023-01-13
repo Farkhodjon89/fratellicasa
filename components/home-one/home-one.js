@@ -17,21 +17,38 @@ const HomeOne = () => (
       swipeScrollTolerance={50}
       preventMovementUntilSwipeScrollTolerance={true}
     >
+      {/*<div>*/}
+      {/*  <Link href='/catalog/zhenskaya'>*/}
+      {/*    <a className={s.autumn}>*/}
+      {/*      <div className={s.inner}>*/}
+      {/*        <div className={s.title}>Женская одежда с орнаментом</div>*/}
+      {/*        <div className={s.buttons}>*/}
+      {/*          <Link href='/catalog/zhenskaya'>*/}
+      {/*            <a>Купить</a>*/}
+      {/*          </Link>*/}
+      {/*        </div>*/}
+      {/*      </div>*/}
+      {/*    </a>*/}
+      {/*  </Link>*/}
+      {/*</div>*/}
       <div>
         <Link href='/catalog/zhenskaya'>
-          <a className={s.autumn}>
+          <a className={s.hudi}>
             <div className={s.inner}>
-              <div className={s.title}>Женская одежда с орнаментом</div>
+              {/*<div className={s.title}>Женская одежда с орнаментом</div>*/}
               <div className={s.buttons}>
                 <Link href='/catalog/zhenskaya'>
-                  <a>Купить</a>
+                  <a>Для девушек</a>
+                </Link>
+                <Link href='/catalog/muzhskaya'>
+                  <a>Для мужчин</a>
                 </Link>
               </div>
             </div>
           </a>
         </Link>
       </div>
-      {/*<div>*/}
+      {/* <div>*/}
       {/*  <div className={s.women}>*/}
       {/*    <div className={s.inner}>*/}
       {/*      <div className={s.title}>Весна-лето</div>*/}
@@ -46,11 +63,11 @@ const HomeOne = () => (
       {/*    </div>*/}
       {/*  </div>*/}
       {/*</div>*/}
-      {/* <div>
-        <Link href='/catalog'>
-          <a className={s.zoodpay}></a>
-        </Link>
-      </div> */}
+      {/*/!* <div>*/}
+      {/*  <Link href='/catalog'>*/}
+      {/*    <a className={s.zoodpay}></a>*/}
+      {/*  </Link>*/}
+      {/*</div> *!/*/}
     </Carousel>
   </div>
 )

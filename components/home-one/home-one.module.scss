@@ -6,7 +6,7 @@
 
 .women,
 .men,
-.zoodpay, .autumn {
+.zoodpay, .autumn, .hudi {
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -107,11 +107,20 @@
   }
 }
 
+.hudi {
+  background-image: url('/home/home-one-3.jpg');
+
+  .inner {
+    top: 73%;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .women,
   .men,
   .zoodpay,
-  .autumn {
+  .autumn,
+  .hudi {
     height: 600px;
     display: flex;
     flex-direction: column;
@@ -177,5 +186,19 @@
   }
   .zoodpay {
     background-image: url('/home/z3-mob.jpg');
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hudi {
+    height: 400px;
+  }
+  .inner {
+    .buttons {
+      a {
+        font-size: 15px;
+        padding: 7px 15px;
+      }
+    }
   }
 }
