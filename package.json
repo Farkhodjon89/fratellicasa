@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next dev",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider' next build",
     "start": "next start"
   },
   "dependencies": {
@@ -17,6 +17,7 @@
     "apollo-link-http": "^1.5.17",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.2",
+    "cross-env": "^7.0.3",
     "express": "^4.17.1",
     "format": "^0.2.2",
     "graphql": "^15.3.0",

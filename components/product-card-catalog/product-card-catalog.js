@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from 'uuid'
 import { getPrice, getPriceValue, getDiscount } from '../../utils'
 
 const ProductCardCatalog = ({ currentProducts }) => {
-  console.log('currentProducts', currentProducts)
   return currentProducts.map((product) => {
     const discountPrice = getDiscount(product)
     const sizes = product.variations
@@ -21,12 +20,6 @@ const ProductCardCatalog = ({ currentProducts }) => {
           },
         ]
 
-    // function getUniqueListBy(arr, key) {
-    //   return [...new Map(arr.map((item) => [item[key], item])).values()]
-    // }
-
-    // const joki = getUniqueListBy(sizes, 'size')
-    // console.log(product.image == null);
     return (
       <>
         {product.image && (

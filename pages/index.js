@@ -40,7 +40,7 @@ export async function getStaticProps() {
       categories: 'svitshoty',
     },
   })
-  // console.log(result2.data.products.nodes)
+
   const result3 = await client.query({
     query: PRODUCTS,
     variables: {

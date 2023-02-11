@@ -130,7 +130,6 @@ export async function getStaticProps({ params }) {
     fetchPolicy: 'no-cache',
     variables: { first: 8, categories: [params.slug] },
   })
-  // console.log(result2.data.products.nodes)
 
   const result3 = await client.query({
     query: PRODUCTS,

@@ -1,12 +1,11 @@
-import { PersistGate } from 'redux-persist/integration/react';
-import { useStore } from 'react-redux';
-import { store } from '../redux/store';
-import Router from 'next/router';
-import NProgress from 'nprogress';
-import React, { useEffect, useReducer, createContext } from 'react';
-import '../styles/globals.css';
-// import axios from 'axios'
-import { HeadData } from '../components/Head';
+import { PersistGate } from 'redux-persist/integration/react'
+import { useStore } from 'react-redux'
+import { store } from '../redux/store'
+import Router from 'next/router'
+import NProgress from 'nprogress'
+import React, { useEffect, useReducer, createContext } from 'react'
+import '../styles/globals.css'
+import { HeadData } from '../components/Head'
 
 export const reducer = (state, action) => {
   switch (action.type) {
@@ -14,33 +13,33 @@ export const reducer = (state, action) => {
       return {
         ...state,
         currency: 'UZ',
-      };
+      }
     case 'USD':
       return {
         ...state,
         currency: 'USD',
-      };
+      }
     default:
-      return state;
+      return state
   }
-};
+}
 
-Router.onRouteChangeStart = () => NProgress.start();
+Router.onRouteChangeStart = () => NProgress.start()
 
-Router.onRouteChangeComplete = () => NProgress.done();
+Router.onRouteChangeComplete = () => NProgress.done()
 
-Router.onRouteChangeError = () => NProgress.done();
+Router.onRouteChangeError = () => NProgress.done()
 
 if (process.browser) {
-  const hours = 6;
-  const now = Date.now();
-  const setupTime = localStorage.getItem('version');
+  const hours = 6
+  const now = Date.now()
+  const setupTime = localStorage.getItem('version')
   if (setupTime == null) {
-    localStorage.removeItem('persist:nextjs');
-    localStorage.setItem('version', now);
+    localStorage.removeItem('persist:nextjs')
+    localStorage.setItem('version', now)
   } else if (now - setupTime > hours * 60 * 60 * 1000) {
-    localStorage.removeItem('persist:nextjs');
-    localStorage.setItem('version', now);
+    localStorage.removeItem('persist:nextjs')
+    localStorage.setItem('version', now)
   }
 }
 
@@ -49,42 +48,19 @@ export const Context = createContext({
     currency: 'UZ',
   },
   dispatch: () => null,
-});
+})
 
 const App = ({ Component, pageProps }) => {
-  // const [data, setData] = useState({})
-
-  // useEffect(async () => {
-  //   await axios
-  //     .get('http://ip-api.com/json')
-  //     .then(function (response) {
-  //       setData(response.data)
-  //     })
-  //     .catch(function (error) {
-  //       console.log(error)
-  //     })
-  // }, [])
-
-  const store = useStore();
+  const store = useStore()
   const [state, dispatch] = useReducer(
     reducer,
     (process.browser && JSON.parse(localStorage.getItem('currency'))) || {
       currency: 'UZ',
-    },
-  );
+    }
+  )
   useEffect(() => {
-    process.browser && localStorage.setItem('currency', JSON.stringify(state));
-  }, [state]);
-
-  // useEffect(() => {
-  //   process.browser &&
-  //     localStorage.setItem(
-  //       'currency',
-  //       JSON.stringify({
-  //         active: data.countryCode === 'UZ' ? false : true,
-  //       })
-  //     )
-  // }, [data])
+    process.browser && localStorage.setItem('currency', JSON.stringify(state))
+  }, [state])
 
   return (
     <>
@@ -97,7 +73,7 @@ const App = ({ Component, pageProps }) => {
         )}
       </PersistGate>
     </>
-  );
-};
+  )
+}
 
-export default store.withRedux(App);
+export default store.withRedux(App)

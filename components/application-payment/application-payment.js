@@ -185,7 +185,6 @@ const ApplicationPayment = ({ cartItems }) => {
 
     if (response.data.status) {
       setOrder(response.data.order)
-      console.log(response.data.order)
       switch (selectMethod) {
         case 'cod':
           await window.location.assign(

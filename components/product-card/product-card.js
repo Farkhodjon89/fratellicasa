@@ -17,7 +17,6 @@ const ProductCard = ({
   getActiveStatus,
   topColors,
 }) => {
-  // console.log(cartItems)
   // general
   const [selectedProductId, setselectedProductId] = useState(
     product.variations
@@ -72,30 +71,27 @@ const ProductCard = ({
   })
 
   const discountPrice = getDiscount(product)
-  // console.log(product)
-
+  console.log(product)
   // product color
   const [selectedProductColorCode, setSelectedProductColorCode] = useState(
     product.variations
-      ? product.variations.nodes[0].attributes &&
-          product.variations.nodes[0].attributes.nodes[0].color
+      ? product?.variations?.nodes[0]?.attributes?.nodes[0].color
       : product.terms.nodes && product.terms.nodes[0]
       ? product.terms.nodes[0].color
       : ''
   )
   const [selectedProductColorName, setSelectedProductColorName] = useState(
     product.variations
-      ? product.variations.nodes[0].attributes &&
-          product.variations.nodes[0].attributes.nodes[0].value
+      ? product?.variations?.nodes[0]?.attributes?.nodes[0].value
       : product.terms && product.terms.nodes[0]
       ? product.terms.nodes[0].name
       : ''
   )
   const [selectedProductColor, setSelectedProductColor] = useState(
     product.variations
-      ? product.variations.nodes[0].attributes &&
-          product.variations.nodes[0].attributes.nodes[0].value
-      : product.attributes && product.attributes.nodes[0].options[0]
+      ? product?.variations?.nodes[0]?.attributes?.nodes[0].value
+      : product?.attributes?.nodes[0]?.options?.length &&
+          product?.attributes?.nodes[0]?.options[0]
   )
 
   // product size
@@ -202,8 +198,6 @@ const ProductCard = ({
   ]
 
   sizes.sort((a, b) => {
-    // console.log('a :>> ', a)
-    // console.log('b :>> ', b)
     a.size = a.size.toLowerCase()
     b.size = b.size.toLowerCase()
 
@@ -276,8 +270,7 @@ const ProductCard = ({
 
           {product.variations ? (
             <>
-              {product.variations.nodes[0].attributes &&
-              product.variations.nodes[0].attributes.nodes[1] ? (
+              {product?.variations?.nodes[0]?.attributes?.nodes[1] ? (
                 <div className={s.color} key={uuidv4()}>
                   <span>Цвет: {selectedProductColorName} </span>
                   <div>
@@ -304,8 +297,7 @@ const ProductCard = ({
                 ''
               )}
 
-              {product.variations.nodes[0].attributes &&
-              product.variations.nodes[0].attributes.nodes[1] ? (
+              {product?.variations?.nodes[0]?.attributes?.nodes[1] ? (
                 <div className={s.size} key={uuidv4()}>
                   <span>Размер: </span>
                   <div>
@@ -364,7 +356,9 @@ const ProductCard = ({
                     <div
                       className={
                         selectedProductColor ===
-                        product.attributes.nodes[0].options[0]
+                        product?.attributes?.nodes[0]?.options
+                          ? product?.attributes?.nodes[0]?.options[0]
+                          : false
                           ? s.active
                           : ''
                       }
@@ -384,7 +378,9 @@ const ProductCard = ({
                             product.terms.nodes[0].color
                           )
                           setSelectedProductColor(
-                            product.attributes.nodes[0].options[0]
+                            product?.attributes?.nodes[0]?.options
+                              ? product?.attributes?.nodes[0]?.options[0]
+                              : ''
                           )
                           setSelectedProductSize(
                             product.attributes.nodes[1].options[0]
