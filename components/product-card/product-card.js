@@ -71,7 +71,7 @@ const ProductCard = ({
   })
 
   const discountPrice = getDiscount(product)
-  console.log(product)
+
   // product color
   const [selectedProductColorCode, setSelectedProductColorCode] = useState(
     product.variations
