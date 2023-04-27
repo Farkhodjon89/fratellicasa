@@ -66,7 +66,7 @@ const Catalog = ({
             (item) => item.slug === categorySlug
           )[0]?.products?.nodes[0]?.image?.sourceUrl
   }
-
+  console.log('rebuild')
   return (
     <>
       <HeadData image={seoImage} />
