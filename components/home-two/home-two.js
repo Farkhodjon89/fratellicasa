@@ -8,7 +8,7 @@ const HomeTwo = () => {
       {
         link: '/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya',
         title: 'Женские футболки с орнаментом',
-        imgUrl: '/home/cover2.jpg',
+        imgUrl: '/home/home-two-2.jpg',
       },
       {
         link: '/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-muzhskaya',
