@@ -41,7 +41,7 @@ const Catalog = ({
     categoryBreadcrumb = categories[1].node.name
     seoImage =
       categorySlug === 'muzhskaya'
-        ? categories[1].node.products.nodes[0].image.sourceUrl
+        ? categories[1].node.products.nodes?.[0]?.image?.sourceUrl
         : categories[1].node.children.nodes.filter(
             (item) => item.slug === categorySlug
           )[0]?.products?.nodes[0]?.image?.sourceUrl
@@ -51,7 +51,7 @@ const Catalog = ({
     categoryBreadcrumb = categories[2].node.name
     seoImage =
       categorySlug === 'devochkam'
-        ? categories[2].node.products.nodes[0].image.sourceUrl
+        ? categories[2].node.products?.nodes?.[0]?.image?.sourceUrl
         : categories[2].node.children.nodes.filter(
             (item) => item.slug === categorySlug
           )[0]?.products?.nodes[0]?.image?.sourceUrl
@@ -61,7 +61,7 @@ const Catalog = ({
     categoryBreadcrumb = categories[3].node.name
     seoImage =
       categorySlug === 'dom-2'
-        ? categories[3].node.products.nodes[0].image.sourceUrl
+        ? categories[3].node.products.nodes?.[0]?.image?.sourceUrl
         : categories[3].node.children.nodes.filter(
             (item) => item.slug === categorySlug
           )[0]?.products?.nodes[0]?.image?.sourceUrl
