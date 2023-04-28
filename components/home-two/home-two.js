@@ -6,7 +6,7 @@ const HomeTwo = () => {
   const items = useMemo(
     () => [
       {
-        link: '/catalog/svitshot-svitshot-detskij-zhenskaya-2-zhenskaya-zhenskaya',
+        link: '/catalog/futbolki-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya-futbolka-maternity-zhenskaya',
         title: 'Женские футболки с орнаментом',
         imgUrl: '/home/home-two-2.jpg',
       },
@@ -37,41 +37,12 @@ const HomeTwo = () => {
             className={s.block}
             style={{ backgroundImage: `url(${el.imgUrl})` }}
           >
-            {index === 0 ? (
-              <div className={s.desc}>
+            <Link href={el.link}>
+              <a className={s.desc}>
                 <div className={s.text}>{el.title}</div>
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    gap: '50px',
-                  }}
-                >
-                  <Link href={'/catalog/zhenskaya'}>
-                    <a>
-                      <div className={`${s.link} ${s.largeLink}`}>
-                        Для девушек
-                      </div>
-                    </a>
-                  </Link>
-                  <Link href={'/catalog/muzhskaya'}>
-                    <a>
-                      <div className={`${s.link} ${s.largeLink}`}>
-                        Для мужчин
-                      </div>
-                    </a>
-                  </Link>
-                </div>
-              </div>
-            ) : (
-              <Link href={el.link}>
-                <a className={s.desc}>
-                  <div className={s.text}>{el.title}</div>
-                  <div className={s.link}>Купить</div>
-                </a>
-              </Link>
-            )}
+                <div className={s.link}>Купить</div>
+              </a>
+            </Link>
           </div>
         ))}
       </div>
