@@ -167,7 +167,7 @@ const FooterTop = () => (
         </Link>
       </div>
       <div className={s.icons}>
-        <Link href='/'>
+        {/* <Link href='/'>
           <a>
             <img src='/footer/click.svg' />
           </a>
@@ -177,7 +177,7 @@ const FooterTop = () => (
           <a>
             <img src='/footer/payme.svg' />
           </a>
-        </Link>
+        </Link> */}
 
         <Link href='/'>
           <a>

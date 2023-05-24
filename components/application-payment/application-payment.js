@@ -25,8 +25,8 @@ const ApplicationPayment = ({ cartItems }) => {
       title: 'Оплата при доставке',
       value: 'cod',
     },
-    { src: '/application/payClick.svg', title: 'Click', value: 'click' },
-    { src: '/application/payPayMe.svg', title: 'Payme', value: 'payme' },
+    // { src: '/application/payClick.svg', title: 'Click', value: 'click' },
+    // { src: '/application/payPayMe.svg', title: 'Payme', value: 'payme' },
     { src: '/application/payZoodpay.svg', title: 'Zoodpay', value: 'zoodpay' },
   ]
   const [isLoading, setIsLoading] = useState(false)
@@ -423,7 +423,7 @@ const ApplicationPayment = ({ cartItems }) => {
                 <div className={s.text}>
                   <img src='/application/warning2.svg' alt='' />
                   {user.city === 'Toshkent shahri'
-                    ? 'Оплата после доставки возможна следующими методами: наличные, CLICK, PAYME '
+                    ? 'Оплата после доставки возможна следующими методами: наличные'
                     : 'В регионы Узбекистана действует 100% предоплата '}
                 </div>
                 <div className={s.textZoodpay}>

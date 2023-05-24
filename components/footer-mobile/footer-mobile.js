@@ -151,12 +151,12 @@ const FooterMobile = () => (
       </div>
     </div>
     <div className={s.icons}>
-      <a href='/'>
+      {/* <a href='/'>
         <img src='/footer/click.svg' />
       </a>
       <a href='/'>
         <img src='/footer/payme.svg' />
-      </a>
+      </a> */}
       <a href='/'>
         <img src='/footer/visa.svg' />
       </a>
