@@ -64,14 +64,25 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      <HeadData />
+      {/* <HeadData />
       <PersistGate persistor={store.__persistor} loading={null}>
         {() => (
           <Context.Provider value={[state, dispatch]}>
             <Component {...pageProps} />
           </Context.Provider>
         )}
-      </PersistGate>
+      </PersistGate> */}
+      <div
+        style={{
+          width: '100vw',
+          height: '100vh',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <h1>Скоро вернемся</h1>
+      </div>
     </>
   )
 }
